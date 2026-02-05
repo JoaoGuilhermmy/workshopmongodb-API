@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.joaoguilhermmy.workshopmongo.domain.User;
+import com.joaoguilhermmy.workshopmongo.dto.UserDTO;
 import com.joaoguilhermmy.workshopmongo.expection.ResourcesNotFoundException;
 import com.joaoguilhermmy.workshopmongo.repository.UserRepository;
 
@@ -24,5 +25,13 @@ public class UserService {
         Optional<User> user = repository.findById(id);
 
         return user.orElseThrow(() -> new ResourcesNotFoundException(id));
+    }
+
+    public User insert(User obj) {
+        return repository.save(obj);
+    }
+
+    public User fromDTO(UserDTO objDto) {
+        return new User(objDto.getId(), objDto.getEmail(), objDto.getEmail());
     }
 }
