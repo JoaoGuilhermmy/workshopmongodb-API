@@ -25,7 +25,6 @@ public class UserService {
 
     public User findById(String id) {
         Optional<User> user = repository.findById(id);
-
         return user.orElseThrow(() -> new ResourcesNotFoundException(id));
     }
 
