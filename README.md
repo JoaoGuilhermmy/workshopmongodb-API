@@ -11,7 +11,7 @@
 
 <br>
 
-[![Live Demo](https://img.shields.io/badge/🚀_ACESSE_O_DEMO_AO_VIVO-Experimente_Agora-00C7B7?style=for-the-badge&labelColor=000000)](https://workshopmongodb-api-production.up.railway.app/swagger-ui/index.html)
+[![Live Demo](https://img.shields.io/badge/🚀_ACESSE_O_DEMO_AO_VIVO-Experimente_Agora-00C7B7?style=for-the-badge&labelColor=000000)](https://social-data-api-production.up.railway.app/swagger-ui/index.html)
 
 <br>
 
